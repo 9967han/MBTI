@@ -24,6 +24,11 @@
         <button id="A" type="button" class="btn btn-primary mt-5">Primary</button>
         <button id="B" type="button" class="btn btn-primary mt-5">Primary</button>
     </article>
+    <article class="result">
+        <img id="id" src="" alt="">
+        <h2 id="animal">동물이름</h2>
+        <h2 id="explain">설명</h2>
+    </article>
     <input type="hidden" id="EI" value="0">
     <input type="hidden" id="SN" value="0">
     <input type="hidden" id="TF" value="0">
@@ -34,8 +39,17 @@
         var num = 1;
         var q = {
             1 : {"title" : "문제 1번", "type" : "EI", "A" : "E", "B" : "I"},
-            2 : {"title" : "문제 2번", "type" : "SN", "A" : "S", "B" : "N"},
-            3 : {"title" : "문제 3번", "type" : "SN", "A" : "S", "B" : "N"}
+            2 : {"title" : "문제 2번", "type" : "EI", "A" : "S", "B" : "N"},
+            3 : {"title" : "문제 3번", "type" : "EI", "A" : "S", "B" : "N"},
+            4 : {"title" : "문제 4번", "type" : "SN", "A" : "E", "B" : "I"},
+            5 : {"title" : "문제 5번", "type" : "SN", "A" : "S", "B" : "N"},
+            6 : {"title" : "문제 6번", "type" : "SN", "A" : "S", "B" : "N"},
+            7 : {"title" : "문제 7번", "type" : "TF", "A" : "E", "B" : "I"},
+            8 : {"title" : "문제 8번", "type" : "TF", "A" : "S", "B" : "N"},
+            9 : {"title" : "문제 9번", "type" : "TF", "A" : "S", "B" : "N"},
+            10 : {"title" : "문제 10번", "type" : "JP", "A" : "E", "B" : "I"},
+            11 : {"title" : "문제 11번", "type" : "JP", "A" : "S", "B" : "N"},
+            12 : {"title" : "문제 12번", "type" : "JP", "A" : "S", "B" : "N"}
         }
         function start() {
             $(".start").hide();
@@ -55,6 +69,11 @@
         });
 
         function next() {
+            if(num == 13) {
+                $(".question").hide();
+                $(".result").show();
+                return;
+            }
             $(".progress-bar").attr("style", "width: calc(100/12*"+num+"%)");
             $("#title").html(q[num]["title"]);
             $("#type").val(q[num]["type"]);
