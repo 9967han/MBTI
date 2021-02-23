@@ -17,37 +17,82 @@
     <!-- style.css 연결 -->
     <link rel="stylesheet" href="style.css"> 
 </head>
-<body class="container">
-    <article class="start">
-        <h1 class="mt-5 text-center">나랑 꼭 닮은 세렝게티 동물은?</h1>
-        <button type="button" class="btn btn-primary mt-5" onclick="start()">테스트 시작하기</button>    
-    </article>
-    <article class="question">
-        <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
-          </div>
-        <h2 id="title" class="text-center mt-5">문제</h2>
-        <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-primary mt-5">Primary</button>
-        <button id="B" type="button" class="btn btn-primary mt-5">Primary</button>
-    </article>
-    <article class="result">
-        <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="">
-        <h2 id="animal" class="text-center mt-5">동물이름</h2>
-        <h2 id="explain" class="text-center mt-5">설명</h2>
-
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<article class="kakao_ad">
+    <ins class="kakao_ad_area" style="display:none;" 
+    data-ad-unit    = "DAN-r3kVN5H5jUmM3fTu" 
+    data-ad-width   = "320" 
+    data-ad-height  = "50"></ins> 
+</article>
+<body class="container cen">
+    <!-- <article class="mt-4 start">
+        <div class="start_main">
+            <h2 class="m-4 text-center">나랑 꼭 맞는 학과는?</h2>
+            <p>
+                누구나 한 번쯤 해봤을 생각<span style="color: #096E1E;"> 지금 내 전공이.. 나와 맞는걸까? 😭</span>
+                <br>
+                MBTI를 통해 나에게 꼭 맞는 💕 / 안 맞는 😱 학과를 알아보자!
+                <br>
+                내 성격을 생각해보며, 나와 맞는 전공도 찾아보세요❗️
+            </p>
+            <img id="img" class= "start_img mt-1" src="lion.jpg" alt="">
+        </div>
+        <button type="button" class="btn btn_test_start mt-3" onclick="start()">테스트 시작하기</button>    
+        <button type="button" class="btn btn_all_result mt-3" onclick="start()">모든 결과보기</button>    
         <div class="addthis_inline_share_toolbox share mt-5"></div>
     </article>
-    <article class="kakao_ad mt-5">
-        <ins class="kakao_ad_area" style="display:none;" 
-        data-ad-unit    = "DAN-r3kVN5H5jUmM3fTu" 
-        data-ad-width   = "320" 
-        data-ad-height  = "100"></ins> 
+    <article class="question">
+        <div class="mt-4">
+            <h2 id="title" class="text-center mt-2">🌱 학과유형 테스트</h2>
+        </div>
+        <div class="progress mt-4">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+          </div>
+        <div class="start_main mt-4">
+            <h2 id="title" class="text-center mt-2">문제</h2>
+        </div>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn btn_main2 mt-4">Primary</button>
+        <button id="B" type="button" class="btn btn_main2 mt-2">Primary</button>
+        <button id="B" type="button" class="btn btn_main2 mt-2">Primary</button>
+        <button id="B" type="button" class="btn btn_main2 mt-2">Primary</button> 
+    </article> -->
+    <article class="result">
+        <div class="start_main">
+            <p class="text-center">ISTB</p>
+            <h4 class="text-center">결과</h4>
+            <img id="img" class="final_img mt-4" src="lion.jpg" alt="">
+            <p class="mt-3">
+                <i class="fas fa-check-circle"></i> 설명1
+                <br>
+                <i class="fas fa-check-circle"></i> 설명2
+                <br>
+                <i class="fas fa-check-circle"></i> 설명3
+            </p>
+
+            <h5 class="text-center">메인2</h5>
+            <p class="mt-3">
+                <i class="fas fa-check-circle"></i> 설명1
+                <br>
+                <i class="fas fa-check-circle"></i> 설명2
+            </p>
+            <h5 class="text-center">메인3</h5>
+            <p class="mt-3">
+                <i class="fas fa-check-circle"></i> 설명1
+                <br>
+                <i class="fas fa-check-circle"></i> 설명2
+            </p>
+        </div>
+        <!-- <img id="img" class="final_img rounded-circle mt-5" src="lion.jpg" alt="">
+        <h2 id="animal" class="text-center mt-5">동물이름</h2>
+        <h2 id="explain" class="text-center mt-5">설명</h2> -->
+        <div class="addthis_inline_share_toolbox share mt-4"></div>
+        <button type="button" class="btn btn_test_start mt-3" onclick="start()">테스트 시작하기</button>    
+        <button type="button" class="btn btn_all_result mt-3" onclick="start()">모든 결과보기</button> 
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <a class="mt-5 banner" href="https://www.codelion.net/catalog/Q291cnNlTm9kZTpqbW9r?utm_source=animal_test&utm_medium=web_lecture&utm_campaign=9967han">
+            <img class="banner-img" src="banner.png" alt="banner">
+        </a>
     </article>
-    <a class="mt-5 banner" href="https://www.codelion.net/catalog/Q291cnNlTm9kZTpqbW9r?utm_source=animal_test&utm_medium=web_lecture&utm_campaign=9967han">
-        <img class="banner-img" src="banner.png" alt="banner">
-    </a>
     
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <input type="hidden" id="EI" value="0">
@@ -98,24 +143,34 @@
             if(num == 13) {
                 $(".question").hide();
                 $(".result").show();
-                var mbti = "";
-                $("#EI").val() < 2 ? mbti += "I" : mbti += "E";
-                $("#SN").val() < 2 ? mbti += "N" : mbti += "S";
-                $("#TF").val() < 2 ? mbti += "F" : mbti += "T";
-                $("#JP").val() < 2 ? mbti += "P" : mbti += "J";
-                $("#img").attr("src", result[mbti]["img"]);
-                $("#animal").html(result[mbti]["animal"]);
-                $("#explain").html(result[mbti]["explain"]);
-            } else {
-                $(".progress-bar").attr("style", "width: calc(100/12*"+num+"%)");
-                $("#title").html(q[num]["title"]);
-                $("#type").val(q[num]["type"]);
-                $("#A").html(q[num]["A"]);
-                $("#B").html(q[num]["B"]);
-                num++;
+                finalize();
+                return;
             }
+            $(".progress-bar").attr("style", "width: calc(100/12*"+num+"%)");
+            $("#title").html(q[num]["title"]);
+            $("#type").val(q[num]["type"]);
+            $("#A").html(q[num]["A"]);
+            $("#B").html(q[num]["B"]);
+            num++;
+        }
+
+        function finalize() {
+            $(".btn_test_start").show();
+            $(".btn_all_result").show();
+            var mbti = "";
+            $("#EI").val() < 2 ? mbti += "I" : mbti += "E";
+            $("#SN").val() < 2 ? mbti += "N" : mbti += "S";
+            $("#TF").val() < 2 ? mbti += "F" : mbti += "T";
+            $("#JP").val() < 2 ? mbti += "P" : mbti += "J";
+            $("#img").attr("src", result[mbti]["img"]);
+            $("#animal").html(result[mbti]["animal"]);
+            $("#explain").html(result[mbti]["explain"]);
         }
     </script>
+    <!-- font-awesome -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools --> 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6032940631045ffe"></script>
 </body>
